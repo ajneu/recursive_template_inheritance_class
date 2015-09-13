@@ -1,0 +1,9 @@
+= recursive_template_inheritance_class
+
+For a class such as:
+[source,cpp]
+----
+BB<BB<BB<>>> x{"innermost", "inner", "outermost base"};
+----
+
+where the template argument passed to `BB`, will be a base class of `BB`.
